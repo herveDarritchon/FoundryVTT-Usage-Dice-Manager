@@ -1,0 +1,20 @@
+{
+  "id": "usage-dice-manager",
+  "title": "Usage Dice Manager",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "description": "Usage Dice Manager brings a fresh, dynamic way to manage consumable resources in your tabletop RPG sessions. Tired of tracking every arrow, ration, or torch? Let Usage Dice Manager handle it for you! With an intuitive Usage Dice system, your supplies gradually dwindle based on dice rolls, creating suspenseful moments without the hassle of manual inventory management.\n\nEvery time a resource is used, roll the corresponding die. If it shows a low result, the die shrinks, signaling your supplies are running low. When you're down to the last die, the tension ramps up — will it last, or will you run out just when you need it most?\n\nPerfect for GMs and players who want to focus on the adventure without losing the drama of running out of critical supplies. Add excitement and immersion to your games with Usage Dice Manager, and let the dice decide when the stakes are highest.",
+  "authors": [
+    {
+      "name": "Hervé Darritchon",
+      "email": "herve.darritchon@gmail.com",
+      "url": "https://outme.hervedarritchon.fr/en/",
+      "discord": "herveDarritchon#7262",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/herveDarritchon/FoundryVTT-Usage-Dice-Manager"
+}
