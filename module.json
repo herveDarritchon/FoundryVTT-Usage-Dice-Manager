@@ -16,5 +16,28 @@
       "flags": {}
     }
   ],
+  "esmodules": [
+    "./src/usage-die-master.mjs"
+  ],
+  "styles": [
+    "./styles/usage-die-master.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "languages/fr.json"
+    }
+  ],
+  "manifest": "https://github.com/herveDarritchon/FoundryVTT-Usage-Dice-Manager/releases/latest/download/module.json",
+  "download": "placeholder",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "https://github.com/herveDarritchon/FoundryVTT-Usage-Dice-Manager/issues",
   "url": "https://github.com/herveDarritchon/FoundryVTT-Usage-Dice-Manager"
 }
