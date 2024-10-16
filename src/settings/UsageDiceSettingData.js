@@ -2,7 +2,7 @@ import {UsageDie} from "./UsageDie.js";
 
 export class UsageDiceSettingData {
 
-    static module =  "udm1e";
+    static module = "udm1e";
 
     constructor(parsedJson) {
         //parsedJson is an array of objects
@@ -10,15 +10,22 @@ export class UsageDiceSettingData {
             throw new Error("parsedJson must be an array");
         }
 
-        this.usageDice = this._parse(parsedJson);
+        this.data = this._parse(parsedJson);
         console.log("UsageDiceSettingData | this.usageDice: ", this.usageDice);
     }
 
     static readDice() {
-        return  game.settings.get(UsageDiceSettingData.module, "usage-die-live-dice");
+        return game.settings.get(UsageDiceSettingData.module, "usage-die-live-dice");
     }
 
-    static async  writeDice(dice) {
+    static readDieBy(name) {
+        const usageDice = game.settings.get(UsageDiceSettingData.module, "usage-die-live-dice");
+        const die = usageDice.data.find((usageDie) => usageDie.name === name);
+        if (!die) throw new Error(`Usage Die not found by name: ${name}`);
+        return die;
+    }
+
+    static async writeDice(dice) {
         if (dice == null || !Array.isArray(dice)) {
             throw new Error("dice must be an array");
         }

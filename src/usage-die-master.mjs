@@ -19,4 +19,6 @@ Hooks.once("ready", async function () {
         }
     ]);
     console.log("UDM1e | usageDiceSettingData: ", UsageDiceSettingData.readDice());
+    console.log("UDM1e | usage die d4: ", UsageDiceSettingData.readDieBy("d4"));
+    console.log("UDM1e | invalid usage die d6: ", UsageDiceSettingData.readDieBy("d6"));
 });
